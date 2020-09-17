@@ -2,7 +2,7 @@
 
 This projects aims to map crops being grown in the USA based on (1) the USDA inventory of crop area, (2) a MODIS vegetation map. 
 
-to plot land cover type in a county, follow the following recipe:
+To plot land cover type in a county, follow the following recipe:
 
 open a Python3 prompt
 
