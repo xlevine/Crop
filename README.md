@@ -24,6 +24,11 @@ After completing step (7), you will see a PNG file appear in your local director
 
 By default, the code generate plots for the yearly land use ('LC_Type_1') based on the Annual International Geosphere-Biosphere Programme (IGBP) classification. This classification bins land use into 17 classes of 'natural' and 'anthropogenic' landscapes.
 
+
+<img src="https://github.com/xlevine/Crop/blob/master/plots/CA.png" width="300"><img src="https://github.com/xlevine/Crop/blob/master/plots/IL.png" width="300"><img src="https://github.com/xlevine/Crop/blob/master/plots/CT.png" width="300">
+
+<img src="https://github.com/xlevine/Crop/blob/master/plots/06037.png" width="300"><img src="https://github.com/xlevine/Crop/blob/master/plots/17031.png" width="300"><img src="https://github.com/xlevine/Crop/blob/master/plots/09009.png" width="300">
+
 To download MODIS data: 
 
 1. go to https://lpdaac.usgs.gov/product_search/
