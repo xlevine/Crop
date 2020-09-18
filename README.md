@@ -1,6 +1,6 @@
-# Mapping Land Surface using MODIS datasets  
-
 This projects aims to map crops being grown in the USA based on (1) the USDA inventory of crop area, (2) a MODIS vegetation map. 
+
+# Mapping Land Surface using MODIS datasets  
 
 I.  First, we map MODIS vegetation for any given geographical unit (County or State). To do so, you need to follow the following recipe:
 
@@ -40,3 +40,5 @@ To download MODIS data:
 4. determine variable of interest (e.g. 'LC_Type_1' for land use when using the MCD12Q1 dataset). 
 
 5. update read_modis.py and read_hdf_file.py to update the variable name, the dataset name, and the spatial resolution if necessary. To plot this new quantity, simply input the time frame ('YYYY' for a yearly dataset, 'YYYYMM' for a monthly-mean one, 'YYYYMMDD' for a submonthly one) and the location ID (county / state) in map_landuse_2D(). Et voila!
+
+# Mapping Crop acreage using USDA datasets  
