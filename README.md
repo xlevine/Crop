@@ -45,7 +45,7 @@ For more information about the different grids:  https://modis-land.gsfc.nasa.go
 
 This code can handle data in SIN grids at all available resolution (100m, 250m, 500m, 1000m), which is the most common format for high-resolution datasets. This code can handle any number of temporal resolutions (yearly, monthly, 14 days, 8 days, 4 days, daily).
 
-For data in SIN grid, select tiles of interest (e.g. h9-h12, v4-v6) and download them using the wget file provided from Earthdata.
+For data in SIN grid, select tiles of interest (e.g. h9-h12, v4-v6) and download them using the wget file provided by the Earthdata download tool.
 
 Note: you will need to update the variable name (in read_modis.py), and the dataset name and variable list if not already predefined (in dic_modis.py). To produce a map of your chosen variable, simply input the time frame ('YYYY' for a yearly dataset, 'YYYYMM' for a monthly-mean one, 'YYYYMMDD' for a submonthly one) and the location ID (county / state) in map_landuse_2D(). Et voila!
 
