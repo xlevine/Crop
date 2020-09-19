@@ -39,6 +39,12 @@ To download MODIS data:
 
 4. determine variable of interest (e.g. 'LC_Type_1' for land use when using the MCD12Q1 dataset). 
 
-5. update read_modis.py and read_hdf_file.py to update the variable name, the dataset name, and the spatial resolution if necessary. To plot this new quantity, simply input the time frame ('YYYY' for a yearly dataset, 'YYYYMM' for a monthly-mean one, 'YYYYMMDD' for a submonthly one) and the location ID (county / state) in map_landuse_2D(). Et voila!
+5. Follow the download link to the Nasa Earthdata Search. Select all revelevant files by year (e.g. 2017) and tiles. MODIS data is outputed in 3 grid format: Climate Modelling (CMG), Lambert Azimuthal Equal-Area Tile (Polar), and Sinusoidal Tile (SIN) grids. 
+
+For more information about the different grids:  https://modis-land.gsfc.nasa.gov/MODLAND_grid.html 
+
+This code can handle data in both CMG and SIN grids. For data in SIN grid, select tiles of interest (e.g. h9-h12, v4-v6) and download them using the wget file provided from Earthdata.
+
+Note: in read_modis.py and read_hdf_file.py you will need to update the variable name, the dataset name, and the spatial resolution (if necessary). To plot this new quantity, simply input the time frame ('YYYY' for a yearly dataset, 'YYYYMM' for a monthly-mean one, 'YYYYMMDD' for a submonthly one) and the location ID (county / state) in map_landuse_2D(). Et voila!
 
 # Mapping Crop acreage using USDA datasets  
