@@ -2,19 +2,19 @@ This projects aims to map crops being grown in the USA based on (1) the USDA inv
 
 # Mapping Land Surface at 500m resolution using MODIS datasets  
 
-I.  First, we map MODIS vegetation for any given geographical unit (County or State). To do so, you need to follow the following recipe:
+To map MODIS vegetation for any given geographical unit (County or State) you need to follow the following recipe:
 
-1. download read_modis.py and read_hdf_file.py in this code respository to your local working directory
+1. download read_modis.py and read_hdf_file.py in this code respository to your local working directory.
 
 2. download MODIS tiles for a dataset of interest (see instructions at the end of this tutorial). 
 
 3. fix all hardcoded paths to fit your local directory tree structure. 
 
-4. open a Python3 prompt
+4. open a Python3 prompt.
 
-5. in the prompt: "import read_modis" (this script load when all required packages are installed: matplotlib, numpy, pandas, shapely, json, cartopy, pyhdf.SD)
+5. in the prompt: "import read_modis" (this script load when all required packages are installed: matplotlib, numpy, pandas, shapely, json, cartopy, pyhdf.SD).
 
-6. in the prompt: "from read_modis import map_landuse_2D"
+6. in the prompt: "from read_modis import map_landuse_2D".
 
 7. in the prompt: "map_landuse_2D(year,location)" . Both inputs are strings (e.g. year='2017'); the location string either refers to the FIPS code of the county (e.g '06037' for Los Angeles county) or the State ID (e.g. 'CA' for California).  
 
@@ -51,10 +51,30 @@ Note: you will need to update the variable name (in read_modis.py), and the data
 
 # Mapping Crop acreage by county using USDA datasets  
 
-https://www.fsa.usda.gov/news-room/efoia/electronic-reading-room/frequently-requested-information/crop-acreage-data/index 
+To map USDA crop acreage for each County, you need to follow the following recipe:
 
-read_usda_crop.py
+1. download read_usda_crop.py in this code respository to your local working directory.
+
+2. Download the USDA excel spreadsheets for relevant years and months (see instructions below).
+
+3. fix all hardcoded paths to fit your local directory tree structure. 
+
+4. open a Python3 prompt
+
+5. in the prompt: "import read_usda_crop" (this script load when all required packages are installed: matplotlib, numpy, pandas, plotly.figure_factory)
+
+6. in the prompt: "from read_usda_crop import plot_crop_by_county"
+
+7. in the prompt: "plot_crop_by_county(year,month,crop_name,Irrigation,Use)". All inputs are strings (e.g. year='2017', month='12'); "crop_name" is the name of the crop you want to plot in capital characters (e.g. 'SORGHUM'; default is 'ALL'); "Irrigation" is an optional flag to select only irrigated acres ('Yes'), only rain fed acres ('No'), are all combined ('All'; default); "Use" is an otional flag to select all types of intended use of the crop ('All', default), or specific usage as defined in the USDA file (e.g. 'Grain', 'Forage', etc.)   
+
+After completing step (7), you will see a window in your webbrowser where a figure should appear; this figure can be downloaded as a PNG file. 
 
 <img src="https://github.com/xlevine/Crop/blob/master/plots/WHEAT.png" width="400"><img src="https://github.com/xlevine/Crop/blob/master/plots/CORN.png" width="400">
 
 <img src="https://github.com/xlevine/Crop/blob/master/plots/BARLEY.png" width="400"><img src="https://github.com/xlevine/Crop/blob/master/plots/RICE.png" width="400">
+
+To download the USDA dataset: 
+
+1. go to https://www.fsa.usda.gov/news-room/efoia/electronic-reading-room/frequently-requested-information/crop-acreage-data/index 
+
+2. search for a clickable link that looks like "2018 acreage data as of November 1, 2018" (November 2018 is an example, here choose the year and month that interest your). Note that data for each year is ouput monthly from August to the following January.
