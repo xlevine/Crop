@@ -55,3 +55,6 @@ https://www.fsa.usda.gov/news-room/efoia/electronic-reading-room/frequently-requ
 
 read_usda_crop.py
 
+<img src="https://github.com/xlevine/Crop/blob/master/plots/WHEAT.png" width="400"><img src="https://github.com/xlevine/Crop/blob/master/plots/CORN.png" width="400">
+
+<img src="https://github.com/xlevine/Crop/blob/master/plots/BARLEY.png" width="400"><img src="https://github.com/xlevine/Crop/blob/master/plots/RICE.png" width="400">
