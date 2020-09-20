@@ -67,7 +67,7 @@ To map USDA crop acreage for each County, you need to follow the following recip
 
 7. in the prompt: "plot_crop_by_county(year,month,crop_name,Irrigation,Use)". All inputs are strings (e.g. year='2017', month='12'); "crop_name" is the name of the crop you want to plot in capital characters (e.g. 'SORGHUM'; default is 'ALL'); "Irrigation" is an optional flag to select only irrigated acres ('Yes'), only rain fed acres ('No'), are all combined ('All'; default); "Use" is an otional flag to select all types of intended use of the crop ('All', default), or specific usage as defined in the USDA file (e.g. 'Grain', 'Forage', etc.)   
 
-After completing step (7), you will see a window in your webbrowser where a figure should appear; this figure can be downloaded as a PNG file. 
+After completing step (7), you will see a window in your webbrowser where a figure should appear showing the fraction of acreage of the given crop produced by each county relative to the national total acreage of this crop (in %); this figure can be downloaded as a PNG file. 
 
 <img src="https://github.com/xlevine/Crop/blob/master/plots/WHEAT.png" width="400"><img src="https://github.com/xlevine/Crop/blob/master/plots/CORN.png" width="400">
 
