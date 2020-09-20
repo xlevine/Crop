@@ -50,3 +50,6 @@ For data in SIN grid, select tiles of interest (e.g. h9-h12, v4-v6) and download
 Note: you will need to update the variable name (in read_modis.py), and the dataset name and variable list if not already predefined (in dic_modis.py). To produce a map of your chosen variable, simply input the time frame ('YYYY' for a yearly dataset, 'YYYYMM' for a monthly-mean one, 'YYYYMMDD' for a submonthly one) and the location ID (county / state) in map_landuse_2D(). Et voila!
 
 # Mapping Crop acreage using USDA datasets  
+
+https://www.fsa.usda.gov/news-room/efoia/electronic-reading-room/frequently-requested-information/crop-acreage-data/index 
+
